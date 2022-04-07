@@ -12,13 +12,11 @@ public class PlayerPicker : MonoBehaviour
         if (PlayerInputManager.instance.playerCount == 1)
         {
             Instantiate(player1, transform);
-            Instantiate(player2, transform);
-            StartCoroutine(SpawnBall());
         }
         else
         {
-            //Instantiate(player2, transform);
-            //StartCoroutine(SpawnBall());
+            Instantiate(player2, transform);
+            StartCoroutine(SpawnBall());
         }
     }
     

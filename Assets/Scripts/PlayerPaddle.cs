@@ -26,9 +26,4 @@ public class PlayerPaddle : MonoBehaviour
 
     }
 
-    public void OnStopMove()
-    {
-        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-    }
-
 }

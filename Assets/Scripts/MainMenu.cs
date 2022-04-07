@@ -3,17 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string levelToLoad;
     public GameObject settingsWindow;
     
     public void StartGame()
     {
         SceneManager.LoadScene("Pong");
+        Time.timeScale = 1;
     }
     
     public void Settings()
     {
-    settingsWindow.SetActive(true);
+        settingsWindow.SetActive(true);
     }
 
     public void CloseSettingWindow()
